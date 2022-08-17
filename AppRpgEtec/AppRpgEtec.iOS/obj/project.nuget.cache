@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "04kgtIVfL/yTicFeDjovvG+1IYYvL5p22GrtAGL47Oy8LSwhPC9wY/6tyb3Qm/KXE2dnZ3AZsTIqgVtIL/3g1A==",
+  "success": true,
+  "projectFilePath": "D:\\3Q-Daniel\\PdAM\\AppRpgEtec\\AppRpgEtec\\AppRpgEtec.iOS\\AppRpgEtec.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\etechas\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\etechas\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\etechas\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
