@@ -631,3 +631,4 @@ D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\stamp\_
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\android\assets\Newtonsoft.Json.dll

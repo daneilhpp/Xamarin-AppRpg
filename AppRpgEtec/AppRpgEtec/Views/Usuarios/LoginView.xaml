@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRpgEtec.Views.Usuarios.LoginView">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form" HasUnevenRows="True">
+                <TableRoot>
+                    <TableSection Title="Dados do Usuário" TextColor="#000000" >
+                        <ViewCell>
+                            <Entry Placeholder="Digite seu E-mail" VerticalOptions="FillAndExpand"
+                                   HorizontalOptions="FillAndExpand" Text ="{Binding Login}" Margin="40,0,40,0"></Entry>
+                        </ViewCell>
+                        <ViewCell>
+                            <Entry Placeholder="Digite a senha" IsPassword="True" VerticalOptions="FillAndExpand" 
+                                    HorizontalOptions="FillAndExpand" Text="{Binding Senha}" Margin="40,0,40,0">
+                            </Entry>
+                        </ViewCell>
+                        <ViewCell>
+                            <Button Text="Entrar" Command="{Binding EntrarCommand}" Margin="40,0,40,0" BackgroundColor="#F55050" TextColor="#FFFFFF" CornerRadius="15"/>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

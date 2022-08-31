@@ -6,8 +6,21 @@ using AppRpgEtec.Models;
 
 namespace AppRpgEtec.Services.Usuarios
 {
-    internal class UsuarioService
+    public class UsuarioService: Request
     {
-        //Continuar print 11 da aula04
+        private readonly Request _request;
+        private const string ApiUrlBase = "http://dcarvalho.somee.com/RpgApi/Usuarios";
+
+        public UsuarioService()
+        {
+            _request = new Request();
+        }
+
+        public async Task<Usuario> PostLoginUsuarioAsync(Usuario u)
+        {
+            string urlComplementar = "/Autenticar";
+            u.Token = await _request.PostReturnStringAsync(ApiUrlBase + urlComplementar, u);
+            return u;
+        }
     }
 }
