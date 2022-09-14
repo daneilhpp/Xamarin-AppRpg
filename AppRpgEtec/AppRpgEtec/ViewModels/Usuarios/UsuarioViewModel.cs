@@ -6,6 +6,7 @@ using System.Text;
 using System.Windows.Input;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using AppRpgEtec.Views;
 
 namespace AppRpgEtec.ViewModels.Usuarios
 {
@@ -45,7 +46,7 @@ namespace AppRpgEtec.ViewModels.Usuarios
                     string message = string.Format("Bem-vindo {0}", u.Username);
                     await Application.Current.MainPage.DisplayAlert("Informação",message,"OK");
 
-                    Application.Current.MainPage = new AppRpgEtec.MainPage();
+                    Application.Current.MainPage = new FlyoutMenu();
                 }
                 else
                 {

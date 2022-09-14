@@ -14,3 +14,10 @@ D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\refi
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\AppRpgEtec.pdb
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\ref\AppRpgEtec.dll
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Usuarios\LoginView.xaml.g.cs
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\AboutView.xaml.g.cs
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\DescriptionPage.xaml.g.cs
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Disputas\ListagemView.xaml.g.cs
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\FlyoutMenu.xaml.g.cs
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Personagens\ListagemView.xaml.g.cs
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Usuarios\ListagemView.xaml.g.cs
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Personagens\CadastroPersonagemView.xaml.g.cs
