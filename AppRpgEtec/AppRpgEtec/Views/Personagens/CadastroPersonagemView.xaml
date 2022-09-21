@@ -6,6 +6,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Spacing="3" Padding="15">
+                <Label Text="Id" FontSize="Medium" />
+                <Entry Text="{Binding Id}" IsEnabled="False" FontSize="Medium" />
                 <Label Text="Nome" FontSize="Medium" />
                 <Entry Text="{Binding Nome}" FontSize="Medium" />
                 <Label Text="Classe" FontSize="Medium" />
@@ -26,8 +28,8 @@
                 <Label Text="Derrotas" FontSize="Medium" />
                 <Entry Text="{Binding Derrotas}" FontSize="Medium" Keyboard="Numeric" />
                 <StackLayout Orientation="Horizontal">
-                    <Button Text="Salvar" Command="{Binding SalvarCommand}" HorizontalOptions="FillAndExpand"></Button>
-                    <Button Text="Cancel" Command="{Binding CancelarCommand}" HorizontalOptions="FillAndExpand"></Button>
+                    <Button Text="Salvar" Command="{Binding SalvarCommand}" HorizontalOptions="FillAndExpand" BackgroundColor="#F55050" TextColor="#FFFFFF" CornerRadius="15"></Button>
+                    <Button Text="Cancelar" Command="{Binding CancelarCommand}" HorizontalOptions="FillAndExpand" BackgroundColor="#F55050" TextColor="#FFFFFF" CornerRadius="15"></Button>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

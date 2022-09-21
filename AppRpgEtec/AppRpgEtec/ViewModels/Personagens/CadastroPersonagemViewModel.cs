@@ -6,11 +6,12 @@ using Xamarin.Forms;
 using AppRpgEtec.Models;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
-using System;
+using System.Linq;
 using System.Windows.Input;
 
 namespace AppRpgEtec.ViewModels.Personagens
 {
+    [QueryProperty("PersonagemSelecionadoId","pId")]
     public class CadastroPersonagemViewModel : BaseViewModel
     {
         private PersonagemService pService;
@@ -23,7 +24,7 @@ namespace AppRpgEtec.ViewModels.Personagens
             _ = ObterClasses();
 
             SalvarCommand = new Command(async () => await SalvarPersonagem());
-            CancelarCommand = new Command(async () => CancelarCadastro());
+            CancelarCommand = new Command(() => CancelarCadastro());
         }
 
         private int id;
@@ -108,6 +109,19 @@ namespace AppRpgEtec.ViewModels.Personagens
             }
         }
 
+        private string personagemSelecionadoId;
+        public string PersonagemSelecionadoId 
+        {
+            set
+            {
+                if (value != null)
+                {
+                    personagemSelecionadoId = Uri.UnescapeDataString(value);
+                    CarregarPersonagem();
+                }
+            }
+        }
+
         private ObservableCollection<TipoClasse> listaTiposClasse;
         public ObservableCollection<TipoClasse> ListaTiposClasse
         {
@@ -152,6 +166,7 @@ namespace AppRpgEtec.ViewModels.Personagens
             }
         }
 
+
         public async Task SalvarPersonagem()
         {
             try
@@ -171,6 +186,8 @@ namespace AppRpgEtec.ViewModels.Personagens
                 };
                 if (model.Id == 0)
                     await pService.PostPersonagemAsync(model);
+                else
+                    await pService.PutPersonagemAsync(model);
 
                 await Application.Current.MainPage.DisplayAlert("Mensagem", "Dados salvos com sucesso!", "Ok");
                 await Shell.Current.GoToAsync("..");
@@ -184,6 +201,30 @@ namespace AppRpgEtec.ViewModels.Personagens
         private async void CancelarCadastro()
         {
             await Shell.Current.GoToAsync("..");
+        }
+
+        public async void CarregarPersonagem()
+        {
+            try
+            {
+                Personagem p = await pService.GetPersonagemAsync(int.Parse(personagemSelecionadoId));
+
+                this.Nome = p.Nome;
+                this.PontosVida = p.PontosVida;
+                this.Defesa = p.Defesa;
+                this.Derrotas = p.Derrotas;
+                this.Disputas = p.Disputas;
+                this.Forca = p.Forca;
+                this.Inteligencia = p.Inteligencia;
+                this.Vitorias = p.Vitorias;
+                this.Id = p.Id;
+
+                TipoClasseSelecionado = this.ListaTiposClasse.FirstOrDefault(tClasse => tClasse.Id == (int)p.Classe);
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
         }
     }
 }

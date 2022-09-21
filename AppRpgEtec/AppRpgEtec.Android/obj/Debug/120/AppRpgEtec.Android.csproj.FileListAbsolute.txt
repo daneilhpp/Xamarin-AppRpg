@@ -640,3 +640,4 @@ D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\dra
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\menupersonagens.png
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\menuusuarios.png
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\add.png
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\delete.png

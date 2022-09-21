@@ -1,4 +1,5 @@
-﻿using AppRpgEtec.ViewModels.Personagens;
+﻿using AppRpgEtec.Models;
+using AppRpgEtec.ViewModels.Personagens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
