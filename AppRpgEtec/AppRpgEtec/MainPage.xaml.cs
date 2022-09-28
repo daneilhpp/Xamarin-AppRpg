@@ -13,6 +13,7 @@ namespace AppRpgEtec
         public MainPage()
         {
             InitializeComponent();
+
         }
     }
 }

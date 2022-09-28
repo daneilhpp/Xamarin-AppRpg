@@ -23,3 +23,5 @@ D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\View
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Personagens\CadastroPersonagemView.xaml.g.cs
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\AppRpgEtec.Properties.Resources.resources
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\AppRpgEtec.csproj.GenerateResource.cache
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Armas\CadastroArmaView.xaml.g.cs
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Armas\ListagemView.xaml.g.cs

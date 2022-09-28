@@ -42,7 +42,7 @@ namespace AppRpgEtec.Services.Personagens
         public async Task<Personagem> PutPersonagemAsync(Personagem p)
         {
             var result = await _request.PutAsync(ApiUrlBase, p, _token);
-            return result;
+            return p;
         }
         public async Task<Personagem> DeletePersonagemAsync(int personagemId)
         {

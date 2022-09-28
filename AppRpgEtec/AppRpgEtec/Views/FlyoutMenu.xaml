@@ -5,6 +5,7 @@
              xmlns:viewsUsuarios = "clr-namespace:AppRpgEtec.Views.Usuarios"
              xmlns:viewsPersonagens = "clr-namespace:AppRpgEtec.Views.Personagens"
              xmlns:viewsDisputas = "clr-namespace:AppRpgEtec.Views.Disputas"
+             xmlns:viewsArmas = "clr-namespace:AppRpgEtec.Views.Armas"
              x:Class="AppRpgEtec.Views.FlyoutMenu">
 
     <Shell.FlyoutHeaderTemplate>
@@ -19,6 +20,7 @@
         <ShellContent x:Name="paginaInicial" Title="Página Inicial" Icon="Home.png" ContentTemplate="{DataTemplate viewsRaiz:MainPage}"/>
         <ShellContent Title="Usuários" Icon="MenuUsuarios.png" ContentTemplate="{DataTemplate viewsUsuarios:ListagemView}"/>
         <ShellContent Title="Personagens" Icon="MenuPersonagens.png" ContentTemplate="{DataTemplate viewsPersonagens:ListagemView}"/>
+        <ShellContent Title="Armas" Icon="MenuArmas.png" ContentTemplate="{DataTemplate viewsArmas:ListagemView}"/>
         <ShellContent Title="Disputas" Icon="MenuDisputas.png" ContentTemplate="{DataTemplate viewsDisputas:ListagemView}"/>
         <Tab Title="Info" Route="info" Icon="Info.png">
             <ShellContent Title="Sobre" Route="sobre" ContentTemplate="{DataTemplate viewsRaiz:AboutView}"/>
