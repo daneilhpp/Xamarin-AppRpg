@@ -18,6 +18,12 @@
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent x:Name="paginaInicial" Title="Página Inicial" Icon="Home.png" ContentTemplate="{DataTemplate viewsRaiz:MainPage}"/>
+        <Tab Title="Usuários" Route="usuarios" Icon="MenuUsuarios.png">
+            <ShellContent Title="Listagem" Route="listagem"
+                          ContentTemplate="{DataTemplate viewsUsuarios:ListagemView}"/>
+            <ShellContent Title="Tempo Real" Route="temporeal"
+                          ContentTemplate="{DataTemplate viewsUsuarios:LocalizacaoView}"/>
+        </Tab>
         <ShellContent Title="Usuários" Icon="MenuUsuarios.png" ContentTemplate="{DataTemplate viewsUsuarios:ListagemView}"/>
         <ShellContent Title="Personagens" Icon="MenuPersonagens.png" ContentTemplate="{DataTemplate viewsPersonagens:ListagemView}"/>
         <ShellContent Title="Armas" Icon="MenuArmas.png" ContentTemplate="{DataTemplate viewsArmas:ListagemView}"/>

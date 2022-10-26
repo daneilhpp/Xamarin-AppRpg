@@ -58,10 +58,10 @@ namespace AppRpgEtec.Services
             var content = new StringContent(JsonConvert.SerializeObject(data));
             content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             HttpResponseMessage response = await httpClient.PutAsync(uri, content);
-            string serialized = await response.Content.ReadAsStringAsync();
+            /*string serialized = await response.Content.ReadAsStringAsync();
             TResult result = await Task.Run(() =>
-            JsonConvert.DeserializeObject<TResult>(serialized));
-            return result;
+            JsonConvert.DeserializeObject<TResult>(serialized));*/
+            return data;
         }
         public async Task DeleteAsync(string uri, string token)
         {

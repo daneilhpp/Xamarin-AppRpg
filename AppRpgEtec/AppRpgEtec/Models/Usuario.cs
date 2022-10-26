@@ -12,5 +12,8 @@ namespace AppRpgEtec.Models
         public string Perfil { get; set; }
         public string Token { get; set; }
         public byte[] Foto { get; set; }
+        public double? Latitude { get; set; }
+        public double? Longitude { get; set; }
+
     }
 }

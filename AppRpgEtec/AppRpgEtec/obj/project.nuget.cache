@@ -1,15 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "uPaUtOHqqI1CFzGxnl59ltIoeePPx/b8O9DnY+ZSecnflSH53/iJHS1tu791TnHbQXdiKapAlKUCw23MFrKe3g==",
+  "dgSpecHash": "9lkYf9AnPBjOf9P1Q1zBjdkHj2gJZxvuIxCL+ExwFyxih4/qUKVdq+OQDUM7LLHBe0vfgu3bR4fCTzAft/B+Ww==",
   "success": true,
   "projectFilePath": "D:\\3Q-Daniel\\PdAM\\AppRpgEtec\\AppRpgEtec\\AppRpgEtec\\AppRpgEtec.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\etechas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\etechas\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\etechas\\.nuget\\packages\\xam.plugin.geolocator\\4.5.0.6\\xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\etechas\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\etechas\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\etechas\\.nuget\\packages\\xamarin.forms.googlemaps\\5.0.0\\xamarin.forms.googlemaps.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

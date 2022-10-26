@@ -7,6 +7,7 @@ using System.Windows.Input;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using AppRpgEtec.Views;
+using Plugin.Geolocator;
 
 namespace AppRpgEtec.ViewModels.Usuarios
 {
@@ -42,6 +43,18 @@ namespace AppRpgEtec.ViewModels.Usuarios
                     Application.Current.Properties["UsuarioUsername"] = u.Username;
                     Application.Current.Properties["UsuarioPerfil"] = u.Perfil;
                     Application.Current.Properties["UsuarioToken"] = u.Token;
+
+                    UsuarioService uServiceLoc = new UsuarioService(u.Token);
+                    Usuario uLoc = await uServiceLoc.GetUsuarioAsync(u.Username);
+
+                    var locator = CrossGeolocator.Current;
+                    locator.DesiredAccuracy = 50;
+                    var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
+
+                    uLoc.Latitude = position.Latitude;
+                    uLoc.Longitude = position.Longitude;
+
+                    await uServiceLoc.PutAtualizarLocalizacaoAsync(uLoc);
 
                     string message = string.Format("Bem-vindo {0}", u.Username);
                     await Application.Current.MainPage.DisplayAlert("Informação",message,"OK");

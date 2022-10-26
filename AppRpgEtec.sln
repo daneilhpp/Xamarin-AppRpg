@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppRpgEtec.Android", "AppRp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppRpgEtec.iOS", "AppRpgEtec\AppRpgEtec.iOS\AppRpgEtec.iOS.csproj", "{9EA560F1-F649-4965-B21D-CAF9647E33FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppRpgEtec", "AppRpgEtec\AppRpgEtec\AppRpgEtec.csproj", "{72CF9105-E955-450E-8477-80DCEEA3A469}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppRpgEtec", "AppRpgEtec\AppRpgEtec\AppRpgEtec.csproj", "{72CF9105-E955-450E-8477-80DCEEA3A469}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

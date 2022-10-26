@@ -25,3 +25,4 @@ D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\AppR
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\AppRpgEtec.csproj.GenerateResource.cache
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Armas\CadastroArmaView.xaml.g.cs
 D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Armas\ListagemView.xaml.g.cs
+D:\3Q-Daniel\PdAM\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Usuarios\LocalizacaoView.xaml.g.cs
