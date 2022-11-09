@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Oj1IHb+QFRotVMm8D/vz9i7QLNqbXbOR91z+lheHDn1GdCPySQtPoaAypCHeTAXmvpEg/eliB35GaIdOF52olQ==",
+  "dgSpecHash": "sZ5WIPzCmxdj9gAJa238R5kkHPJPBP876HCSrB5y4t/OXFqL4UWUpDwCFnPFvtYtkyXXBJogciVj4fSm0apWWw==",
   "success": false,
   "projectFilePath": "D:\\3Q-Daniel\\PdAM\\AppRpgEtec\\AppRpgEtec\\AppRpgEtec.Android\\AppRpgEtec.Android.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\etechas\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\xam.plugin.geolocator\\4.5.0.6\\xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
+    "C:\\Users\\etechas\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\xamarin.androidx.activity\\1.4.0.2\\xamarin.androidx.activity.1.4.0.2.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\xamarin.androidx.annotation\\1.3.0.3\\xamarin.androidx.annotation.1.3.0.3.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.2.0.1\\xamarin.androidx.annotation.experimental.1.2.0.1.nupkg.sha512",

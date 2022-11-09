@@ -21,6 +21,8 @@ namespace AppRpgEtec.Views
 
             Routing.RegisterRoute("cadPersonagemView", typeof(CadastroPersonagemView));
 
+            Routing.RegisterRoute("imgPersonagemView", typeof(ImagemPersonagemView));
+
 
             if (Application.Current.Properties.ContainsKey("UsuarioUsername"))
                 lblLogin.Text = "Login: " + Application.Current.Properties["UsuarioUsername"].ToString();

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRpgEtec.Views.Personagens.ImagemPersonagemView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+    <ScrollView>
+        <StackLayout>
+            <Label Text="{Binding Descricao}" HorizontalOptions="CenterAndExpand" FontSize="Medium" />
+            <Image Source="{Binding FonteImagem}" Margin="10"/>
+            <ScrollView>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                    <Grid HorizontalOptions="Fill" Margin="5, 5, 0, 0" Padding="10, 10, 0, 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="33*"/>
+                            <ColumnDefinition Width="34*"/>
+                            <ColumnDefinition Width="33*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Button Text="Câmera" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" Command="{Binding FotografarCommand}"/>
+                        <Button Text="Álbum" HorizontalOptions="Center" Grid.Column="1" Grid.Row="0" Command="{Binding AbrirGaleriaCommand}"/>
+                        <Button Text="Gravar" HorizontalOptions="Center" Grid.Column="2" Grid.Row="0" Command="{Binding SalvarImagemCommand}" />
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

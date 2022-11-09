@@ -53,5 +53,6 @@ namespace AppRpgEtec.Services.Usuarios
             _token);
             return listaUsuarios;
         }
+
     }
 }

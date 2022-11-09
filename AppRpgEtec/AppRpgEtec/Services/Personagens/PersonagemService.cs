@@ -50,5 +50,12 @@ namespace AppRpgEtec.Services.Personagens
             await _request.DeleteAsync(ApiUrlBase + urlComplementar, _token);
             return new Personagem() { Id = personagemId };
         }
+
+        public async Task<Personagem> PutFotoPersonagemAsync(Personagem p)
+        {
+            string urlComplementar = "/AtualizarFoto";
+            var result = await _request.PutAsync(ApiUrlBase + urlComplementar, p, _token);
+            return result;
+        }
     }
 }

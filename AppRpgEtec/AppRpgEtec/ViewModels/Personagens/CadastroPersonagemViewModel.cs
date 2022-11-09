@@ -17,6 +17,7 @@ namespace AppRpgEtec.ViewModels.Personagens
         private PersonagemService pService;
         public ICommand SalvarCommand { get; set; }
         public ICommand CancelarCommand { get; set; }
+        public ICommand NovaImagemCommand { get; set; }
         public CadastroPersonagemViewModel()
         {
             string token = Application.Current.Properties["UsuarioToken"].ToString();
@@ -25,6 +26,7 @@ namespace AppRpgEtec.ViewModels.Personagens
 
             SalvarCommand = new Command(async () => await SalvarPersonagem());
             CancelarCommand = new Command(() => CancelarCadastro());
+            NovaImagemCommand = new Command(ExibirCadastroImagem);
         }
 
         private int id;
@@ -220,6 +222,20 @@ namespace AppRpgEtec.ViewModels.Personagens
                 this.Id = p.Id;
 
                 TipoClasseSelecionado = this.ListaTiposClasse.FirstOrDefault(tClasse => tClasse.Id == (int)p.Classe);
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async void ExibirCadastroImagem()
+        {
+            try
+            {
+                if (this.Id == 0)
+                    throw new Exception("Selecione um Personagem já salvo.");
+                await Shell.Current.GoToAsync($"imgPersonagemView?pId={this.Id}");
             }
             catch (Exception ex)
             {
